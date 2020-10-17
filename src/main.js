@@ -7,6 +7,9 @@ import "lib-flexible/flexible"
 import Fastclick from 'fastclick'
 import { Search } from 'vant';
 import { Swipe, SwipeItem } from 'vant';
+import { Grid, GridItem } from 'vant';
+Vue.use(Grid);
+Vue.use(GridItem);
 Vue.use(Swipe);
 Vue.use(SwipeItem);
 Vue.use(Search);
