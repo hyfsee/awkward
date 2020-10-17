@@ -9,14 +9,30 @@
     @search="onSearch"
     @cancel="onCancel"/>
 </form>
+<!--swipe轮播图-->
+<van-swipe :autoplay="2000" :height="187">
+  <van-swipe-item v-for="(image, index) in images" :key="index">
+    <img :src="image.url"/>
+  </van-swipe-item>
+</van-swipe>
 
 </div> 
 </template>
 <script>
-import { Toast } from 'vant';
+import { Toast } from 'vant'
+import Vue from 'vue'
+import { Lazyload } from 'vant'
+Vue.use(Lazyload)
 export default {
 data() {
-    return {value: '',
+    return {
+        images:[
+        { url: require("../assets/a1.jpg") },
+        { url: require("../assets/a2.jpg") },
+        { url: require("../assets/a3.jpg") },
+
+        ],
+        value: '',
     };
 },
 methods: {
@@ -25,4 +41,11 @@ Toast(val);
     },
 },
 };
-</script>>
+</script>
+<style scoped >
+.banner{
+height: 60px;
+
+
+}
+</style>>

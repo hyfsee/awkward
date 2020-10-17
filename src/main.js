@@ -6,6 +6,9 @@ import { Tabbar, TabbarItem } from 'vant'
 import "lib-flexible/flexible"
 import Fastclick from 'fastclick'
 import { Search } from 'vant';
+import { Swipe, SwipeItem } from 'vant';
+Vue.use(Swipe);
+Vue.use(SwipeItem);
 Vue.use(Search);
 Vue.use(Tabbar)
 Vue.use(TabbarItem)

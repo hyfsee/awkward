@@ -1,12 +1,15 @@
 <template>
-<div class="">
+<div>
 <router-view></router-view>
+<Footer></Footer>
 </div>
 </template>
 <script>
-import Footer from "./components/tabber";
+import Footer from "./components/Footer";
 export default{
-
+    components:{
+        Footer,
+    },
 
 
 }
