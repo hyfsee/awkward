@@ -11,13 +11,13 @@
 </form>
 <!--swipe轮播图-->
 <van-swipe :autoplay="2000" :height="187">
-  <van-swipe-item v-for="(image, index) in images" :key="index">
+<van-swipe-item v-for="(image, index) in images" :key="index">
     <img :src="image.url"/>
-  </van-swipe-item>
+</van-swipe-item>
 </van-swipe>
 <van-grid clickable :column-num="2">
-  <van-grid-item icon="home-o" text="路由跳转" to="/"><van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" /></van-grid-item>
-  <van-grid-item icon="search" text="URL 跳转" url="/vant/mobile.html"><van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" /></van-grid-item>
+<van-grid-item icon="home-o" text="路由跳转" to="/"><van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" /></van-grid-item>
+<van-grid-item icon="search" text="URL 跳转" url="/vant/mobile.html"><van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" /></van-grid-item>
 </van-grid>
 </div> 
 </template>
