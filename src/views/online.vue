@@ -1,6 +1,6 @@
 <template>
     <div>
-        这是在线直播的数据
+       <van-empty image="error" description="没有更多了" />
 
     </div>
 </template>

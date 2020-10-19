@@ -6,8 +6,7 @@
     shape="round"
     background="#4fc08d"
     placeholder="请输入搜索关键词"
-    @search="onSearch"
-    @cancel="onCancel"/>
+    @search="onSearch"/>
 </form>
 <!--swipe轮播图-->
 <van-swipe :autoplay="2000" :height="187">
@@ -15,9 +14,11 @@
     <img :src="image.url"/>
 </van-swipe-item>
 </van-swipe>
-<van-grid clickable :column-num="2">
-<van-grid-item icon="home-o" text="路由跳转" to="/"><van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" /></van-grid-item>
-<van-grid-item icon="search" text="URL 跳转" url="/vant/mobile.html"><van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" /></van-grid-item>
+<van-grid clickable :column-num="4">
+<van-grid-item  text="我的抖音号" to="/"><van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" /></van-grid-item>
+<van-grid-item  text="热门商品榜" url="/vant/mobile.html"><van-image src="https://img.yzcdn.cn/vant/apple-1.jpg"/></van-grid-item>
+<van-grid-item  text="直播监测" to="/"><van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" /></van-grid-item>
+<van-grid-item  text="创意素材" url="/vant/mobile.html"><van-image src="https://img.yzcdn.cn/vant/apple-1.jpg"/></van-grid-item>
 </van-grid>
 </div> 
 </template>

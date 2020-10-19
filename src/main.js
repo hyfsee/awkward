@@ -8,6 +8,10 @@ import Fastclick from 'fastclick'
 import { Search } from 'vant';
 import { Swipe, SwipeItem } from 'vant';
 import { Grid, GridItem } from 'vant';
+import { Empty } from 'vant'
+import { Image as VanImage } from 'vant';
+Vue.use(VanImage);
+Vue.use(Empty);
 Vue.use(Grid);
 Vue.use(GridItem);
 Vue.use(Swipe);

@@ -1,5 +1,6 @@
 <template>
-<div>
+<div class="app"><!--//142322197304024538-->
+    
 <router-view></router-view>
 <Footer></Footer>
 </div>
